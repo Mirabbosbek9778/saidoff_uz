@@ -1,7 +1,7 @@
 import React from "react";
-import { Footer, Navbar } from "@/components";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import OurServicesChild from "@/src/container/OurServices/OurServicesChild";
+import OurServicesChild from "@/container/OurServices/OurServicesChild";
+import { Footer, Navbar } from "components";
 
 const OurServices = (props) => {
   return (

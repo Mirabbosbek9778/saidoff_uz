@@ -2,8 +2,6 @@ import React from "react";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import HandOur from "../../src/img/handOur.png";
-
-import { ArrowIconWhite, ArrowIconWhiteTwo } from "@/src/icons/icon";
 import Link from "next/link";
 import { TbArrowRightCircle } from "react-icons/tb";
 

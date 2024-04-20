@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
-import { Assistance, Partner, Slider, SliderData } from "@/components";
-import WhoAreWe from "@/src/container/AboutUs/WhoAreWe";
-import Results from "@/src/container/AboutUs/Results";
-import Team from "@/src/container/AboutUs/Team";
-import TeamImg from "@/src/container/AboutUs/TeamImg";
-import AboutHeader from "@/src/container/AboutUs/AboutHeader";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AboutBox from "@/src/container/AboutUs/AboutBox";
+import WhoAreWe from "./WhoAreWe";
+import AboutHeader from "./AboutHeader";
+import Results from "./Results";
+import Team from "./Team";
+import TeamImg from "./TeamImg";
+// import AboutBox from "./AboutBox";
 
 function AboutUsChild(props) {
   useEffect(() => {
@@ -25,7 +24,7 @@ function AboutUsChild(props) {
       <WhoAreWe />
       <Team />
       <TeamImg />
-      {/*<AboutBox />*/}
+      {/* <AboutBox /> */}
     </div>
   );
 }

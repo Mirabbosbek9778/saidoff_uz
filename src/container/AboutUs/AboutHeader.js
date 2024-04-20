@@ -1,11 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import HeaderOne from "../../../public/img/AboutMe/HeaderOne.png";
 import soroq from "../../../public/img/AboutMe/soroq.png";
 import { useTranslation } from "next-i18next";
-import { OKampaniyaIcon } from "@/src/icons/icon";
-import About from "../../../src/img/About.png";
+import { OKampaniyaIcon } from "@/icons/icon";
 
 function AboutHeader(props) {
   const { t } = useTranslation();

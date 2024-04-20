@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import "aos/dist/aos.css";
 import { appWithTranslation } from "next-i18next";
 import React from "react";

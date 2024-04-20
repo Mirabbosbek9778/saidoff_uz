@@ -210,3 +210,12 @@
 .teamBox {
   box-shadow: -1px -1px 25px 0 #00000040;
 }
+
+.TextTitle {
+  color: #f7fafc;
+  font-family: Inter, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 36px */
+}

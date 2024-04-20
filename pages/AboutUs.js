@@ -1,7 +1,7 @@
 import React from "react";
-import { Footer, Navbar } from "@/components";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import AboutUsChild from "@/src/container/AboutUs/AboutUsChild";
+import { Footer, Navbar } from "components";
+import AboutUsChild from "@/container/AboutUs/AboutUsChild";
 
 function AboutUs(props) {
   return (

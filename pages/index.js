@@ -1,10 +1,11 @@
 "use Client";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Header, Layout, SliderData } from "@/components";
 import React from "react";
 import Head from "next/head";
-import OurGoal from "@/components/OurGoal/OurGoal";
+import OurGoal from "../components/OurGoal/OurGoal.jsx";
+import { Header, Layout, SliderData } from "../components/index";
+import Cards from "components/cards/Cards.jsx";
 
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
         <Header />
         <OurGoal />
         <SliderData />
+        <Cards />
       </Layout>
     </div>
   );

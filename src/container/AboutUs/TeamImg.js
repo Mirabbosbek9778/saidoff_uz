@@ -1,9 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import Banner from "../../../public/img/AboutMe/Banner.png";
 import { useTranslation } from "next-i18next";
-import { ArrowIconWhite, ArrowIconWhiteTwo } from "@/src/icons/icon";
-import Link from "next/link";
 
 function TeamImg(props) {
   const { t } = useTranslation();

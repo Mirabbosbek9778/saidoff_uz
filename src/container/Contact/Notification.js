@@ -1,19 +1,16 @@
-import { Fragment } from "react"
-import { Transition } from "@headlessui/react"
-import { CheckedIcon } from "@/src/icons/icon"
+import { Fragment } from "react";
+import { Transition } from "@headlessui/react";
+import { CheckedIcon } from "@/icons/icon";
 
 export function Notification({ open, close }) {
   if (open) {
     setTimeout(() => {
-      close()
-
-    }, 5000)
+      close();
+    }, 5000);
   }
 
   return (
     <>
-
-
       <div className="absolute z-50 inset-0 flex px-4  pointer-events-none sm:items-start md:inline right-0 md:mt-20">
         <div className="w-full flex flex-col space-y-4 sm:items-end">
           <Transition
@@ -26,8 +23,10 @@ export function Notification({ open, close }) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="w-72 shadow-2xl rounded-xl ring-1 ring-black ring-opacity-5 p-2 mt-8 flex items-center
-            border-solid border border-text-white">
+            <div
+              className="w-72 shadow-2xl rounded-xl ring-1 ring-black ring-opacity-5 p-2 mt-8 flex items-center
+            border-solid border border-text-white"
+            >
               <div className="flex justify-center items-center bg-primary rounded-lg w-7 h-7 mx-3.5 ">
                 <CheckedIcon />
               </div>
@@ -51,8 +50,10 @@ export function Notification({ open, close }) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="w-72 shadow-2xl rounded-xl ring-1 ring-black ring-opacity-5 p-2 mt-8 flex items-center bg-white
-            border-solid border border-text-white">
+            <div
+              className="w-72 shadow-2xl rounded-xl ring-1 ring-black ring-opacity-5 p-2 mt-8 flex items-center bg-white
+            border-solid border border-text-white"
+            >
               <div className="flex justify-center items-center bg-gray-50 rounded-lg w-7 h-7 mx-3.5">
                 <CheckedIcon />
               </div>
@@ -65,6 +66,6 @@ export function Notification({ open, close }) {
         </div>
       </div>
     </>
-  )
+  );
 }
-0
+0;

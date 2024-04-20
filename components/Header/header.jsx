@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import HeaderImg from "../../src/img/111.png";
 import { useTranslation } from "next-i18next";
-import { ArrowIcon } from "@/src/icons/icon";
 import Link from "next/link";
 import { TbArrowRightCircle } from "react-icons/tb";
 // import Videoss from "../../src/img/videoss.mp4";

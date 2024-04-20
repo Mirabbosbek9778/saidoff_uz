@@ -1,14 +1,14 @@
 import React, { useCallback, useState } from "react";
-import Logo from "@/public/Saidoff logo_white+d.png";
+import Logo from "../../public/Logo_White.png";
 import Image from "next/image";
 import Link from "next/link";
 
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
-import { Notification } from "@/src/container/Contact/Notification";
-import MobileMenu from "@/components/MobileMenu/MobileMenu";
-import { HamburgerIcon, XIcon } from "@/src/icons/icon";
 import equals from "equals";
+import { Notification } from "@/container/Contact/Notification";
+import MobileMenu from "components/MobileMenu/MobileMenu";
+import { HamburgerIcon, XIcon } from "@/icons/icon";
 
 export default function Navbar() {
   const { pathname } = useRouter();

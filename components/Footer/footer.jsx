@@ -2,18 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useTranslation } from "next-i18next";
-import Logo from "@/public/Saidoff logo_white+d.png";
-
+// import Logo from "@/public/Saidoff logo_white+d.png";
+import Logo from "../../public/Logo_White.png";
 import {
   FacebookIcons,
   Icon,
   IconThere,
   IconTwo,
   InstagiramIcon,
-  LinkedinIcon,
   TelegiramIcon,
-} from "@/src/icons/icon";
-import Linkedin from "../../src/icons/linkedin.png";
+} from "@/icons/icon";
 
 export default function Footer() {
   const { t } = useTranslation();

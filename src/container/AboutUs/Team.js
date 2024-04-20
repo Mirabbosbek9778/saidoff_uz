@@ -5,17 +5,8 @@ import teamOne from "../../../public/img/team/Dostonbek.png";
 import teamTwo from "../../../public/img/team/Oybek.png";
 import teamTheere from "../../../public/img/team/Asadulloh.png";
 import teamFour from "../../../public/img/team/Nursulton.png";
-
-import teamTwoOneBg from "../../../public/img/AboutMe/teamTwoBg.png";
-import teamTwoTwoBg from "../../../public/img/AboutMe/teamTwoTwoBg.png";
-
-import {
-  FacebookIcon,
-  InstagramIcon,
-  TeamOneBgIcon,
-  TeamOneTwoBgIcon,
-} from "@/src/icons/icon";
 import { useTranslation } from "next-i18next";
+
 function Team(props) {
   const { t } = useTranslation();
   return (
