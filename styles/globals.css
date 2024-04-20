@@ -91,7 +91,7 @@
   background-image: url("../public/img/AboutMe/back.png");
   background-size: cover;
   background-position: center;
-  height: 620px;
+  height: 720px;
 }
 @media screen and (max-width: 768px) {
   .Banner {
@@ -110,7 +110,7 @@
   background-position: bottom;
 }
 .servecesHeader {
-  background-image: url("../public/img/ServicesImg/bg.png");
+  background-image: url("../src/img/ourService.png");
   background-size: cover;
   background-position: center;
   height: 620px;

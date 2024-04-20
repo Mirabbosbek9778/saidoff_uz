@@ -13,6 +13,7 @@ import equals from "equals";
 export default function Navbar() {
   const { pathname } = useRouter();
   const [mobile, setMobile] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
   const { t } = useTranslation();
   const router = useRouter();
   const Locale = (event) => {
@@ -67,19 +68,57 @@ export default function Navbar() {
                 <Image width={200} src={Logo} alt="" />
               </Link>
             </div>
-            <div className="uppercase w-9/12 justify-evenly hidden md:flex">
-              <Link href="/">{t("ГЛАВНАЯ")}</Link>
-              <Link href="/AboutUs">{t("О КОМПАНИИ")}</Link>
-              <Link href="/OurServices">{t("НАШИ УСЛУГИ И КЕЙСЫ")}</Link>
-              <Link href="https://saidoff-akademiya.vercel.app/">
-                {t("Akademiyamiz haqida")}
+            <div className="uppercase w-9/12 justify-evenly hidden md:flex font-bold">
+              <Link
+                href="/"
+                className={`relative group ${
+                  activeLink === "/" ? "active" : ""
+                }`}
+                onClick={() => setActiveLink("/")}
+              >
+                <span>{t("ГЛАВНАЯ")}</span>
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100"></span>
+              </Link>
+              <Link
+                href="/AboutUs"
+                className={`relative group ${
+                  activeLink === "/AboutUs" ? "active" : ""
+                }`}
+                onClick={() => setActiveLink("/AboutUs")}
+              >
+                <span>{t("О КОМПАНИИ")}</span>
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100"></span>
+              </Link>
+              <Link
+                href="/OurServices"
+                className={`relative group ${
+                  activeLink === "/OurServices" ? "active" : ""
+                }`}
+                onClick={() => setActiveLink("/OurServices")}
+              >
+                <span>{t("НАШИ УСЛУГИ И КЕЙСЫ")}</span>
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100"></span>
+              </Link>
+              <Link
+                href="https://saidoff-akademiya.vercel.app/"
+                className={`relative group ${
+                  activeLink === "https://saidoff-akademiya.vercel.app/"
+                    ? "active"
+                    : ""
+                }`}
+                onClick={() =>
+                  setActiveLink("https://saidoff-akademiya.vercel.app/")
+                }
+              >
+                <span>{t("Akademiyamiz haqida")}</span>
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100"></span>
               </Link>
             </div>
             <div className="flex justify-between w-32 items-center">
               <div className="flex  justify-between">
                 <div>
                   <select
-                    className=" text-whiteБИЗ СИЗНИНГ outline-none bg-inherit border-b border-b-[FFFFFF] cursor-pointer"
+                    className="text-white БИЗ СИЗНИНГ outline-none bg-inherit border-b border-b-[FFFFFF] cursor-pointer"
                     onChange={Locale}
                     value={router.locale}
                   >
